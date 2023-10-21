@@ -1,0 +1,39 @@
+body {
+  font-family: "Inter";
+}
+.registeration_form {
+  border: 1px solid #f2f2f2;
+  padding: 40px 30px;
+  background-color: #effdf5;
+}
+.bg_new {
+  background-color: #00b98e;
+  padding: 100px 0;
+}
+
+/* navbar start */
+
+.img-fluid {
+  width: 100%;
+}
+.nav-bar {
+  position: relative;
+  margin-top: 0;
+  padding: 0;
+}
+/* navbar EnD */
+@media (min-width: 992px) {
+  .header {
+    margin-top: 0;
+  }
+}
+
+.tag_product{
+  width: fit-content;
+  padding: 6px 45px;
+  background: red;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
