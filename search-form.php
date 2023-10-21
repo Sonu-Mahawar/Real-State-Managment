@@ -134,9 +134,6 @@ if (isset($_POST['submit'])) {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
-                                    <a class="btn btn-primary py-3 px-5" href="">Browse More Property</a>
-                                </div>
                             <?php endif ?>
                         </div>
                     </div>
