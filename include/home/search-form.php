@@ -1,22 +1,3 @@
-<?php
-$select = $conn->query("SELECT * FROM product_page");
-$select->execute();
-$product_page = $select->fetchAll(PDO::FETCH_OBJ);
-
-if (isset($_POST['submit'])) {
-    $home_type = $_POST['types'];
-    $cities = $_POST['cities'];
-    $type = $_POST['offers'];
-
-    $search = $conn->query("SELECT * FROM product_page WHERE home_type LIKE '%$home_type%' AND sale_type LIKE '%$type%' OR home_location LIKE '%$cities%'");
-
-    $search->execute();
-
-    $listing = $search->fetchAll(PDO::FETCH_OBJ);
-} else {
-    header("location:index.php");
-}
-?>
 <!-- Search Start -->
 <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
     <div class="container">

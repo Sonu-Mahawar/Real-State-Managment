@@ -41,9 +41,9 @@ $product_page = $select->fetchAll(PDO::FETCH_OBJ);
                                 <div class="position-relative overflow-hidden">
                                     <a href=""><img class="img-fluid" src="img/<?php echo $page_con->home_image; ?>" alt=""></a>
                                     <div class="rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3 
-                                    <?php if ($page_con->type == "Sale") : echo "bg-primary";
+                                    <?php if ($page_con->sale_type == "Sale") : echo "bg-primary";
                                     else : echo "bg-danger";
-                                    endif; ?>"><?php echo $page_con->type; ?></div>
+                                    endif; ?>"><?php echo $page_con->sale_type; ?></div>
                                     <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3"><?php echo $page_con->home_type; ?></div>
                                 </div>
                                 <div class="p-4 pb-0">
@@ -73,9 +73,9 @@ $product_page = $select->fetchAll(PDO::FETCH_OBJ);
                                 <div class="position-relative overflow-hidden">
                                     <a href=""><img class="img-fluid" src="img/<?php echo $page_con->home_image; ?>" alt=""></a>
                                     <div class="rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3 
-                                    <?php if ($page_con->type == "Sale") : echo "bg-primary";
+                                    <?php if ($page_con->sale_type == "Sale") : echo "bg-primary";
                                     else : echo "bg-danger";
-                                    endif; ?>"><?php echo $page_con->type; ?></div>
+                                    endif; ?>"><?php echo $page_con->sale_type; ?></div>
                                     <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3"><?php echo $page_con->home_type; ?></div>
                                 </div>
                                 <div class="p-4 pb-0">
@@ -105,9 +105,9 @@ $product_page = $select->fetchAll(PDO::FETCH_OBJ);
                                 <div class="position-relative overflow-hidden">
                                     <a href=""><img class="img-fluid" src="img/<?php echo $page_con->home_image; ?>" alt=""></a>
                                     <div class="rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3 
-                                    <?php if ($page_con->type == "Sale") : echo "bg-primary";
+                                    <?php if ($page_con->sale_type == "Sale") : echo "bg-primary";
                                     else : echo "bg-danger";
-                                    endif; ?>"><?php echo $page_con->type; ?></div>
+                                    endif; ?>"><?php echo $page_con->sale_type; ?></div>
                                     <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3"><?php echo $page_con->home_type; ?></div>
                                 </div>
                                 <div class="p-4 pb-0">

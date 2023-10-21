@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
     $cities = $_POST['cities'];
     $type = $_POST['offers'];
 
-    $search = $conn->query("SELECT * FROM product_page WHERE home_type LIKE '%$home_type%' AND sale_type LIKE '%$type%' OR home_location LIKE '%$cities%'");
+    $search = $conn->query("SELECT * FROM product_page WHERE home_type LIKE '%$home_type%' AND sale_type LIKE '%$type%' AND home_location LIKE '%$cities%'");
 
     $search->execute();
 
@@ -56,9 +56,9 @@ if (isset($_POST['submit'])) {
                             <div class="col-md-4">
                                 <select name="types" class="form-select border-0 py-3">
                                     <option selected>Property Type</option>
-                                    <option value="Appartment">Appartment</option>
-                                    <option value="Villa">Villa</option>
-                                    <option value="Office">Office</option>
+                                    <option value="appartment">Appartment</option>
+                                    <option value="villa">Villa</option>
+                                    <option value="office">Office</option>
                                     <option value="Building">Building</option>
                                     <option value="Home">Home</option>
                                     <option value="Shop">Shop</option>
@@ -85,7 +85,7 @@ if (isset($_POST['submit'])) {
                         </div>
                     </div>
                     <div class="col-md-2">
-                    <button class="btn btn-dark border-0 w-100 py-3" name="submit">Search</button>
+                        <button class="btn btn-dark border-0 w-100 py-3" name="submit">Search</button>
                     </div>
                 </form>
             </div>
@@ -127,8 +127,12 @@ if (isset($_POST['submit'])) {
                                     </div>
                                 <?php endforeach; ?>
                             <?php else : ?>
-                                <div class="bg-success text-white d-flex justify-content-center align-items-center w-100">
-                                    Property not Found
+                                <div class="row justify-content-center">
+                                    <div class="col-8">
+                                        <div class="bg-success py-5 text-white d-flex justify-content-center align-items-center w-100">
+                                            Property not Found
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
                                     <a class="btn btn-primary py-3 px-5" href="">Browse More Property</a>
