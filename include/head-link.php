@@ -1,3 +1,4 @@
+<?php require 'maintenance.php' ?>
 <head>
     <meta charset="utf-8">
     <title>Makaan - Real Estate HTML Template</title>
